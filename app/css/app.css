@@ -1,0 +1,99 @@
+/* app css stylesheet */
+
+body {
+    padding-top: 20px;
+    background-image: url("../images/classic-cardback.png");
+    background-attachment: fixed;
+}
+.cards{
+    background-color: transparent;
+}
+
+.card-listing{
+    background-color:rgba(161, 161, 158, 0.6);
+}
+.card-details{
+    background-color:rgba(161, 161, 158, 0.6);
+    font-weight: bolder;
+}
+.card-details a {
+    font-weight: bolder;
+    color: #fbfffd;
+}
+.card-listing p {
+    font-weight: bolder;
+}
+
+.card-listing a {
+    font-weight: bolder;
+    color: #fbfffd;
+}
+
+.card-image{
+
+    margin: 0 auto;
+}
+
+.cards {
+    list-style: none;
+}
+
+
+/*Put the card listings into columns*/
+/*.card-column {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-width: 200px;
+    -moz-column-width: 200px;
+    column-width: 200px;
+    -webkit-column-gap: 4em;
+    -moz-column-gap: 4em;
+    column-gap: 4em;
+} */
+
+
+
+.thumbnail, .card-listing {
+    height: 150px;
+    width: 500px;
+}
+.thumb {
+    float: left;
+    margin: -0.5em 1em 1.5em 0;
+    padding-bottom: 1em;
+    height: 100px;
+    width: 100px;
+}
+.menu {
+    list-style: none;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
+}
+.search-bar{
+    background-color:rgba(161, 161, 158, 0.6);
+
+
+}
+.menu:before {
+    content: "[";
+}
+
+.menu:after {
+    content: "]";
+}
+
+.menu > li {
+    display: inline;
+}
+
+.menu > li:before {
+    content: "|";
+    padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+    content: "";
+    padding: 0;
+}

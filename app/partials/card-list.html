@@ -1,0 +1,28 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 search-bar">
+            <!--Sidebar content-->
+
+            Search: <input ng-model="query">
+            <p>Sort by:</p>
+            <select ng-model="orderProp">
+                <option value="name">Alphabetical</option>
+                <option value="mana">Mana cost</option>
+            </select>
+
+        </div>
+        <div class="col-md-10">
+            <!--Body content-->
+
+            <ul class="cards card-column">
+                <li ng-repeat="card in cards | filter:query | orderBy:orderProp"
+                    class="thumbnail card-listing">
+                    <a href="#/cards/{{card.id}}" class="thumb"><img ng-src="{{card.image_url}}" alt="{{card.name}}"></a>
+                    <a href="#/cards/{{card.id}}">{{card.name}}</a>
+                    <p>{{card.description}}</p>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>

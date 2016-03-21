@@ -1,0 +1,32 @@
+<!--
+            $scope.cardName = result[0].name;
+            $scope.description = result[0].description;
+            $scope.image_url = result[0].image_url;
+            $scope.type = result[0].type;
+            $scope.quality = result[0].quality;
+            $scope.collectible = result[0].collectible;
+            $scope.set = result[0].set;
+            $scope.mana = result[0].mana;
+            $scope.attack = result[0].attack;
+            $scope.health = result[0].health;
+            $scope.hero = result[0].hero;
+-->
+<div class="row">
+    <div class="col-md-2 col-md-offset-5 card-details">
+        <div class="card-image">
+            <img ng-src="{{image_url}}"
+                 class="card">
+        </div>
+
+        <h1>{{cardName}}</h1>
+        <p>{{description}}</p>
+        <ul class="specs">
+            <!-- Use a ternary operator here. If here = null then all classes can use it -->
+            <li><strong>Class: </strong>{{(hero == null) ? "all" : hero}}</li>
+            <li><strong>Set: </strong> {{set}}</li>
+            <li><strong>Rarity: </strong> {{quality}}</li>
+            <li><strong>Type: </strong>{{type}}</li>
+            <li><strong>Collectible: </strong>{{collectible}}</li>
+        </ul>
+    </div>
+</div>
