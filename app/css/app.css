@@ -39,8 +39,12 @@ body {
 }
 
 
-/*Put the card listings into columns*/
-/*.card-column {
+/*
+Put the card listings into columns
+Currently bugged: when searched it cuts the last card in the first column in half and adds it to the top
+*/
+/*
+.card-column {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
@@ -50,8 +54,8 @@ body {
     -webkit-column-gap: 4em;
     -moz-column-gap: 4em;
     column-gap: 4em;
-} */
-
+}
+*/
 
 
 .thumbnail, .card-listing {

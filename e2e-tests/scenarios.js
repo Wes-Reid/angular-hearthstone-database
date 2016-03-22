@@ -1,7 +1,8 @@
 'use strict';
 
 /* https://github.com/angular/protractor/blob/master/docs/toc.md */
-
+//TODO: Write proper e2e tests
+/*
 describe('my app', function() {
 
 
@@ -40,3 +41,4 @@ describe('my app', function() {
 
   });
 });
+*/
